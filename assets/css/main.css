@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+width: 80%;
+}
+.container > div{
+    margin-top: 20px;
+}
+h1{
+    animation-name: colorChange;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-align: center;
+    color: crimson;
+    margin-top: 20px;
+}
+@keyframes colorChange {
+    to{
+        transform: scale(1.1);
+        color: dodgerblue;
+    }
+}
+.hero-text-AND{
+    animation-name: colorChangeAnd;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-align: center;
+    color: green;
+}
+@keyframes colorChangeAnd {
+    to{
+        color: red;
+    }
+}
+.hero-text-Time{
+    animation-name: colorChangeTime;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-align: center;
+    color: aqua;
+
+}
+@keyframes colorChangeTime {
+    to{
+        color: dodgerblue;
+    }
+}
+.hero-text{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* .question-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} */
+.test-one{
+    margin-top: 30px;
+    color: orange;
+}
+.test-two{
+    color: purple;
+}
+.test-three{
+    color: green;
+}
+.test-four{
+    color: palevioletred;
+}
+.test-five{
+    color: midnightblue;
+}
+.test-six{
+    color: orangered;
+}
+.number{
+    color: black;
+}
+input{
+    width: 90px;
+    outline: none;
+}
+.verb{
+    color: black;
+}
+img{
+    width: 200px;
+    height: 100px;
+    margin-top: 10px;
+}
+button{
+    background-color: dodgerblue;
+    border-radius: 6px;
+    padding: 3px;
+    border: none;
+    color: white;
+
+}
+button:hover{
+    background-color: aqua;
+    transition: 1s;
+}
+button:active{
+    box-shadow: 0px 0px 0px 3px aqua;
+    transition: none;
+}
+.btn-box{
+    margin: auto;
+    width: 10%;
+}
+
+img{
+    border-radius: 7px;
+}
+.picture{
+    width: 50%;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.first-stage:hover{
+fill: red;
+}
+.second-stage:hover{
+    fill: orange;
+    }
+    .third-stage:hover{
+        fill: yellow;
+        }
+        .fourt-stage:hover{
+            fill: green;
+            }
+            .ordinary{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                position: relative;
+                
+            }
+            .picture-strategy{
+                position: relative;
+            }
+            .picture-strategy::before{
+                content: '';
+                height: 0; 
+                width: 0;
+                position: absolute;
+                border-top: 8px solid transparent;
+                border-right: 14px solid dodgerblue;
+                border-bottom: 8px solid transparent;
+                left: 220px;
+                top: 50%;
+            }
+            .picture-strategy::after{
+                content: ' 10/10 that is excellent  8/10 that is great   6/10 not bad ';
+                height: 200px; 
+                background-color: dodgerblue;
+                color: white;
+                width: 200px;
+                position: absolute;
+                left: 232px;
+                top: 25%;
+                line-height: 25px;
+                border-radius: 7px;
+            }
