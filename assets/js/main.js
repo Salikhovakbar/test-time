@@ -5,6 +5,7 @@ const fourthInput = document.getElementById("fourth-answer");
 const fivthInput = document.getElementById("fivth-answer");
 const sixthInput = document.getElementById("sixth-answer");
 const seventhInput = document.getElementById("seventh-answer");
+const eighthInput = document.getElementById("eighth-answer");
 const menuBtn = document.getElementById("btn-menu");
 const closeBtn = document.getElementById("close-btn");
 const boxMenu = document.querySelector(".cross-bar-box");
@@ -117,6 +118,21 @@ let correctWrong = () => {
                         const pEl = document.createElement("p");
                         boxEl.appendChild(pEl);
                         pEl.innerHTML = "2. 6)Alex is still outside, so the activity is in progress  " ;
+            }  
+            switch(eighthInput.value.toLowerCase()){
+                case "have never visited"  :
+                    case "'ve never visited":
+                    eighthInput.style.border = "1px solid green";
+                    eighthInput.style.borderRadius = "10px";
+                    break;
+                    default:
+                        eighthInput.value = "";
+                        eighthInput.style.border = "1px solid red";
+                        eighthInput.style.borderRadius = "10px";
+                        eighthInput.setAttribute("placeholder", "have never visited");
+                        const pEl = document.createElement("p");
+                        boxEl.appendChild(pEl);
+                        pEl.innerHTML = "7) It says an experience of a person (and there is a key word <strong> never</strong>) " ;
             }  
 }
 btnEl.addEventListener("click",  correctWrong );
